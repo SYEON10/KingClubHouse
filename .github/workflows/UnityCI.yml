@@ -27,6 +27,8 @@ jobs:
   buildWebGL:
     name: Build WebGL 🔨
     runs-on: ubuntu-latest
+    outputs:
+      artifact-name: build-WebGL-${{ github.run_id }}
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -55,7 +57,7 @@ jobs:
       - name: Save Build on build/WebGL folder 💾
         uses: actions/upload-artifact@v4
         with:
-          name: build-WebGL
+          name: build-WebGL-${{ github.run_id }}
           path: build/WebGL
 
   deployPages:
@@ -68,7 +70,7 @@ jobs:
 
       - uses: actions/download-artifact@v4
         with:
-          name: build-WebGL
+          name: build-WebGL-${{ github.run_id }}
           path: build/
 
       - name: Check artifact contents 🔍
