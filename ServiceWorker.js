@@ -1,8 +1,8 @@
-const cacheName = "DefaultCompany-KINGRoom-0.0.8";
+const cacheName = "DefaultCompany-KINGRoom-0.0.9";
 const contentToCache = [
     "Build/WebGL.loader.js",
     "Build/cccb55245bdf70095b0aa2fbad857a15.js",
-    "Build/1db7d80e15bec5f4d333ae5865b96ff3.data",
+    "Build/ae0fb0304f13a7746177a34c6befec2e.data",
     "Build/f59463d42553f4456088fea84ee1ddfa.wasm",
     "TemplateData/style.css"
 
