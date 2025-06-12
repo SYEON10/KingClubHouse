@@ -1,4 +1,4 @@
-const cacheName = "DefaultCompany-KINGRoom-0.0.4";
+const cacheName = "DefaultCompany-KINGRoom-0.0.5";
 const contentToCache = [
     "Build/WebGL.loader.js",
     "Build/WebGL.framework.js",
